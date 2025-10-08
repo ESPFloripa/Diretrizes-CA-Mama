@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -42,13 +43,22 @@
 
     <main class="pt-20">
         <!-- Hero Section -->
+        <section class="py-16 sm:py-20" style="background-image: linear-gradient(to right, rgba(219, 39, 119, 0.7), rgba(236, 72, 153, 0.5)), url('https://i.imgur.com/6o54soE.jpg'); background-size: cover; background-position: center;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Novas Diretrizes para o Rastreamento do Câncer de Mama no Brasil</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-lg sm:text-xl text-pink-100" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Entenda as atualizações do Ministério da Saúde (Setembro de 2025) e a importância da decisão compartilhada.</p>
+                
+                <button id="openModalBtn" class="mt-4 flex items-center justify-center text-lg text-white bg-white/20 backdrop-blur-sm py-2 px-4 rounded-full max-w-xs mx-auto hover:bg-white/30 transition-colors">
+                    <i class="fas fa-graduation-cap mr-2"></i>Curso Livre
+                </button>
+            </div>
+        </section>
+
+        <!-- Media Section -->
         <section class="bg-pink-50 py-16 sm:py-20">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">Novas Diretrizes para o Rastreamento do Câncer de Mama no Brasil</h2>
-                <p class="mt-4 max-w-3xl mx-auto text-lg sm:text-xl text-gray-600">Entenda as atualizações do Ministério da Saúde (Setembro de 2025) e a importância da decisão compartilhada.</p>
-                
                 <!-- Videos moved here -->
-                <div id="videos" class="mt-12">
+                <div id="videos">
                     <h3 class="text-2xl font-bold text-gray-900 mb-8">Vídeos Informativos</h3>
                     <div class="grid gap-8 grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto">
                         <!-- Video 1 -->
@@ -309,13 +319,55 @@
                 </div>
             </div>
         </section>
-        
+
+        <!-- Curso Livre Section -->
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+             <section id="curso-livre" class="bg-teal-50 border-t-4 border-teal-500 rounded-xl shadow-lg p-6 md:p-8 my-16 text-center">
+                <h2 class="text-2xl font-bold text-teal-800 mb-4 flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
+                    Participe do Curso Livre
+                </h2>
+                <p class="text-slate-600 mb-8 max-w-2xl mx-auto">Aprofunde seu conhecimento e obtenha a certificação. Siga os passos abaixo para se inscrever e realizar o teste de aproveitamento.</p>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="https://espfloripa.github.io/cursoslivres/" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 inline-block">
+                        Inscrição para o curso livre
+                    </a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeM8C22zSmwiIwU42xPVtzpqrtcg6itb5PQQ8QTBLvAIdrjYg/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 inline-block">
+                        Teste de aproveitamento
+                    </a>
+                </div>
+            </section>
+        </div>
+
     </main>
+    
+    <!-- Course Modal -->
+    <div id="courseModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-lg shadow-xl max-w-2xl w-full p-6 sm:p-8 relative animate-fade-in-up">
+            <button id="closeModalBtn" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <h3 class="text-2xl font-bold text-teal-900 mb-4">Instruções do Curso Livre</h3>
+            <div class="text-slate-700">
+                <ol class="list-decimal list-inside space-y-3 text-base">
+                    <li>Este Curso Livre é voltado para profissionais de saúde de nível superior e será certificado com a carga horária de 2 horas/aula.</li>
+                    <li>Você deve clicar no botão disponível no fim desta página (ou <a href="https://espfloripa.github.io/cursoslivres/" target="_blank" rel="noopener noreferrer" class="text-teal-600 hover:underline font-semibold">aqui</a>) e preencher todos os campos para se inscrever no curso no mês corrente.</li>
+                    <li>Após a inscrição realizada, você tem até o último dia do mês para responder o teste de aproveitamento disponibilizado no botão no fim da página (não confundir com o Quiz!).</li>
+                    <li>Ao responder o teste de aproveitamento coloque o nome completo e CPF conforme você colocou no link de inscrição.</li>
+                    <li>A nota de corte para aprovação é de 80%.</li>
+                    <li>O teste de aproveitamento só permite uma resposta por participante, caso você não seja aprovado poderá repetir o curso no mês seguinte.</li>
+                    <li>O certificado será disponibilizado até o último dia útil do mês seguinte à finalização do curso.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white">
         <div class="container mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-sm">Este site é um recurso informativo e não substitui a consulta médica profissional.</p>
+            <p class="text-sm">Prefeitura Municipal de Florianópolis - Secretaria Municiapl de Saúde.</p>
             <p class="mt-2 text-xs text-gray-400">Conteúdo baseado na Nota Orientativa da Secretaria Municipal de Saúde de Florianópolis (25/09/2025).</p>
             <p class="mt-4 text-xs text-gray-400">Este é um material produzido pelo Departamento de Gestão da Clínica em Parceria com a Escola de Saúde Pública de Florianópolis.</p>
         </div>
@@ -330,6 +382,26 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        // Modal Logic
+        const openModalBtn = document.getElementById('openModalBtn');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const courseModal = document.getElementById('courseModal');
+
+        openModalBtn.addEventListener('click', () => {
+            courseModal.classList.remove('hidden');
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            courseModal.classList.add('hidden');
+        });
+
+        // Close modal when clicking on the overlay
+        courseModal.addEventListener('click', (e) => {
+            if (e.target === courseModal) {
+                courseModal.classList.add('hidden');
+            }
         });
 
         // Quiz Logic
@@ -551,9 +623,5 @@
     </script>
 </body>
 </html>
-
-
-
-
 
 
