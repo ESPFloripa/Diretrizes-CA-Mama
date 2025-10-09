@@ -74,288 +74,300 @@
             </div>
         </section>
 
-        <!-- Media Section -->
-        <section class="bg-pink-50 py-16 sm:py-20">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <!-- Videos moved here -->
-                <div id="videos" style="scroll-margin-top: 80px;">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-8">Vídeos Informativos</h3>
-                    <div class="grid gap-8 grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto">
-                        <!-- Video 1 -->
-                        <div class="rounded-lg shadow-lg overflow-hidden">
-                            <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/biOG1RAYi8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <!-- Video 2 -->
-                        <div class="rounded-lg shadow-lg overflow-hidden">
-                            <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/KZiSA38D3uk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Audio Player Link -->
-                <div class="mt-10 max-w-2xl mx-auto bg-white rounded-xl shadow-lg p-6 text-center">
-                    <h3 class="font-bold text-lg text-gray-800 mb-4">Sem tempo? Podcast Resumo:</h3>
-                    <a href="https://drive.google.com/file/d/1HX2vXkSnE1UY0WL2IBwcwNy8JLxs7uxo/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-pink-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-pink-700 transition-transform transform hover:scale-105 duration-300 shadow-lg">
-                        <svg class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                        Ouvir o Podcast
-                    </a>
-                    <p class="text-xs text-gray-500 mt-3">(O áudio abrirá em uma nova aba)</p>
-                </div>
+        <!-- Start Button Section -->
+        <section id="start-section" class="text-center py-10 bg-gray-100 border-b">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <p class="text-lg text-gray-800 font-medium mb-4">Antes de iniciar o curso leia as instruções e faça a sua inscrição acima!</p>
+                <button id="start-course-btn" class="bg-pink-600 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 inline-block text-xl shadow-lg">
+                    Iniciar
+                </button>
             </div>
         </section>
 
-        <!-- O Que Mudou Section -->
-        <section id="mudancas" class="py-16 sm:py-20">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-gray-900">O Que Mudou no Rastreamento?</h2>
-                    <p class="mt-2 text-lg text-gray-600">As novas diretrizes trazem duas alterações principais na linha de cuidado do SUS.</p>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-pink-500">
-                        <div class="flex items-center mb-4">
-                            <svg class="h-8 w-8 text-pink-500 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
-                            </svg>
-                            <h3 class="text-xl font-semibold text-gray-800">Acesso a partir dos 40 anos</h3>
+        <!-- Main Content Wrapper (initially hidden) -->
+        <div id="main-content" class="hidden">
+            <!-- Media Section -->
+            <section class="bg-pink-50 py-16 sm:py-20">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <!-- Videos moved here -->
+                    <div id="videos" style="scroll-margin-top: 80px;">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-8">Vídeos Informativos</h3>
+                        <div class="grid gap-8 grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto">
+                            <!-- Video 1 -->
+                            <div class="rounded-lg shadow-lg overflow-hidden">
+                                <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/biOG1RAYi8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <!-- Video 2 -->
+                            <div class="rounded-lg shadow-lg overflow-hidden">
+                                <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/KZiSA38D3uk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
                         </div>
-                        <p class="text-gray-600">Garantia de acesso à mamografia para mulheres de 40 a 49 anos, mediante uma <strong class="font-semibold">Decisão Compartilhada e Informada (DCI)</strong> com o profissional de saúde.</p>
                     </div>
-                    <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-teal-500">
-                        <div class="flex items-center mb-4">
-                            <svg class="h-8 w-8 text-teal-500 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+
+                    <!-- Audio Player Link -->
+                    <div class="mt-10 max-w-2xl mx-auto bg-white rounded-xl shadow-lg p-6 text-center">
+                        <h3 class="font-bold text-lg text-gray-800 mb-4">Sem tempo? Podcast Resumo:</h3>
+                        <a href="https://drive.google.com/file/d/1HX2vXkSnE1UY0WL2IBwcwNy8JLxs7uxo/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-pink-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-pink-700 transition-transform transform hover:scale-105 duration-300 shadow-lg">
+                            <svg class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
-                            <h3 class="text-xl font-semibold text-gray-800">Ampliação da faixa etária</h3>
+                            Ouvir o Podcast
+                        </a>
+                        <p class="text-xs text-gray-500 mt-3">(O áudio abrirá em uma nova aba)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- O Que Mudou Section -->
+            <section id="mudancas" class="py-16 sm:py-20">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl font-bold text-gray-900">O Que Mudou no Rastreamento?</h2>
+                        <p class="mt-2 text-lg text-gray-600">As novas diretrizes trazem duas alterações principais na linha de cuidado do SUS.</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                        <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-pink-500">
+                            <div class="flex items-center mb-4">
+                                <svg class="h-8 w-8 text-pink-500 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+                                </svg>
+                                <h3 class="text-xl font-semibold text-gray-800">Acesso a partir dos 40 anos</h3>
+                            </div>
+                            <p class="text-gray-600">Garantia de acesso à mamografia para mulheres de 40 a 49 anos, mediante uma <strong class="font-semibold">Decisão Compartilhada e Informada (DCI)</strong> com o profissional de saúde.</p>
                         </div>
-                        <p class="text-gray-600">O rastreamento ativo bienal (a cada 2 anos) foi estendido, agora recomendado para mulheres <strong class="font-semibold">até os 74 anos</strong> (anteriormente até 69 anos).</p>
+                        <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-teal-500">
+                            <div class="flex items-center mb-4">
+                                <svg class="h-8 w-8 text-teal-500 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                                <h3 class="text-xl font-semibold text-gray-800">Ampliação da faixa etária</h3>
+                            </div>
+                            <p class="text-gray-600">O rastreamento ativo bienal (a cada 2 anos) foi estendido, agora recomendado para mulheres <strong class="font-semibold">até os 74 anos</strong> (anteriormente até 69 anos).</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="mt-16">
-                    <h3 class="text-2xl font-bold text-center mb-8">Comparativo de Diretrizes: Brasil vs. Internacional</h3>
-                    <div class="overflow-x-auto">
-                        <table class="min-w-full bg-white rounded-lg shadow-md">
-                            <thead class="bg-gray-100">
-                                <tr>
-                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Característica</th>
-                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">MS (Anterior)</th>
-                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider bg-pink-50">Nova Abordagem MS (2025)</th>
-                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">USPSTF (EUA - 2024)</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-gray-200">
-                                <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Idade Inicial</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-gray-600">50 anos</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-gray-600 bg-pink-50 font-semibold text-pink-700">Acesso a partir de 40 (Decisão Compartilhada)</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-gray-600">Rotina a partir de 40 anos</td>
-                                </tr>
-                                <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Idade Final</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-gray-600">69 anos</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-gray-600 bg-pink-50 font-semibold text-teal-700">Até 74 anos</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-gray-600">Até 74 anos</td>
-                                </tr>
-                                <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Periodicidade</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-gray-600">Bienal</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-gray-600 bg-pink-50">Bienal</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-gray-600">Bienal</td>
-                                </tr>
-                                <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Recomendação 40-49 anos</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-red-600">Contrária forte</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-gray-600 bg-pink-50 font-semibold text-pink-700">Decisão Compartilhada</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-green-700">Recomendação de rotina</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="mt-16">
+                        <h3 class="text-2xl font-bold text-center mb-8">Comparativo de Diretrizes: Brasil vs. Internacional</h3>
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full bg-white rounded-lg shadow-md">
+                                <thead class="bg-gray-100">
+                                    <tr>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Característica</th>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">MS (Anterior)</th>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider bg-pink-50">Nova Abordagem MS (2025)</th>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">USPSTF (EUA - 2024)</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Idade Inicial</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-gray-600">50 anos</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-gray-600 bg-pink-50 font-semibold text-pink-700">Acesso a partir de 40 (Decisão Compartilhada)</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-gray-600">Rotina a partir de 40 anos</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Idade Final</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-gray-600">69 anos</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-gray-600 bg-pink-50 font-semibold text-teal-700">Até 74 anos</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-gray-600">Até 74 anos</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Periodicidade</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-gray-600">Bienal</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-gray-600 bg-pink-50">Bienal</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-gray-600">Bienal</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Recomendação 40-49 anos</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-red-600">Contrária forte</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-gray-600 bg-pink-50 font-semibold text-pink-700">Decisão Compartilhada</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-green-700">Recomendação de rotina</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        
-        <!-- Decisão Compartilhada: 40-49 Anos -->
-        <section id="faixa-40-49" class="py-16 sm:py-20 bg-pink-50">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center">
-                    <h2 class="text-3xl font-bold text-gray-900">Decisão Compartilhada: A Chave para a Faixa dos 40-49 Anos</h2>
-                    <p class="mt-2 text-lg text-gray-600 max-w-3xl mx-auto">Para esta idade, o diálogo informado é crucial, pois o balanço entre benefícios e riscos é mais delicado.</p>
-                </div>
+            </section>
+            
+            <!-- Decisão Compartilhada: 40-49 Anos -->
+            <section id="faixa-40-49" class="py-16 sm:py-20 bg-pink-50">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center">
+                        <h2 class="text-3xl font-bold text-gray-900">Decisão Compartilhada: A Chave para a Faixa dos 40-49 Anos</h2>
+                        <p class="mt-2 text-lg text-gray-600 max-w-3xl mx-auto">Para esta idade, o diálogo informado é crucial, pois o balanço entre benefícios e riscos é mais delicado.</p>
+                    </div>
 
-                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold text-green-700 mb-3">Possíveis Benefícios</h3>
-                        <p class="text-gray-600">O benefício principal é a chance de detectar o câncer mais cedo, o que pode levar a uma pequena redução na mortalidade. A estimativa é de <strong class="font-semibold">evitar 1,3 mortes adicionais</strong> por 1.000 mulheres rastreadas ao longo da vida, em comparação com iniciar aos 50 anos.</p>
+                    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-green-700 mb-3">Possíveis Benefícios</h3>
+                            <p class="text-gray-600">O benefício principal é a chance de detectar o câncer mais cedo, o que pode levar a uma pequena redução na mortalidade. A estimativa é de <strong class="font-semibold">evitar 1,3 mortes adicionais</strong> por 1.000 mulheres rastreadas ao longo da vida, em comparação com iniciar aos 50 anos.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-red-700 mb-3">Principais Riscos e Danos</h3>
+                            <ul class="space-y-4 text-gray-600">
+                                <li class="flex items-start">
+                                    <svg class="h-6 w-6 text-red-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                                    <div><strong class="font-semibold">Falsos Positivos (Alarme Falso):</strong> É o risco mais comum. Iniciar aos 40 aumenta a chance de um resultado falso-positivo em cerca de <strong class="font-semibold">60%</strong>. Isso gera ansiedade e pode levar a exames e biópsias desnecessárias.</div>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-6 w-6 text-red-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                                    <div><strong class="font-semibold">Sobrediagnóstico e Sobretratamento:</strong> Risco de diagnosticar e tratar um câncer que nunca ameaçaria a vida da mulher. Estima-se <strong class="font-semibold">14 casos de sobrediagnóstico</strong> a cada 1.000 mulheres rastreadas.</div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold text-red-700 mb-3">Principais Riscos e Danos</h3>
-                        <ul class="space-y-4 text-gray-600">
+                </div>
+            </section>
+
+            <!-- Rastreamento Acima dos 50 Anos -->
+            <section id="faixa-50-mais" class="py-16 sm:py-20">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center">
+                        <h2 class="text-3xl font-bold text-gray-900">Rastreamento a Partir dos 50 Anos (até 74)</h2>
+                        <p class="mt-2 text-lg text-gray-600 max-w-3xl mx-auto">Nesta faixa etária, o balanço é mais favorável e o rastreamento bienal é recomendado.</p>
+                    </div>
+                    <div class="mt-12 max-w-4xl mx-auto bg-white rounded-lg shadow-md p-6 sm:p-8">
+                         <ul class="space-y-4">
                             <li class="flex items-start">
-                                <svg class="h-6 w-6 text-red-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
-                                <div><strong class="font-semibold">Falsos Positivos (Alarme Falso):</strong> É o risco mais comum. Iniciar aos 40 aumenta a chance de um resultado falso-positivo em cerca de <strong class="font-semibold">60%</strong>. Isso gera ansiedade e pode levar a exames e biópsias desnecessárias.</div>
+                                 <svg class="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                 <div><strong class="font-semibold text-gray-800">Benefício Maior:</strong> O risco de câncer de mama aumenta com a idade, e a mamografia é mais eficaz para reduzir a mortalidade nesta faixa, com uma redução de risco de cerca de <strong class="font-semibold">20%</strong>.</div>
                             </li>
                             <li class="flex items-start">
-                                <svg class="h-6 w-6 text-red-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
-                                <div><strong class="font-semibold">Sobrediagnóstico e Sobretratamento:</strong> Risco de diagnosticar e tratar um câncer que nunca ameaçaria a vida da mulher. Estima-se <strong class="font-semibold">14 casos de sobrediagnóstico</strong> a cada 1.000 mulheres rastreadas.</div>
+                                 <svg class="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                 <div><strong class="font-semibold text-gray-800">Menor Risco de Falso-Positivo:</strong> Com mamas naturalmente menos densas após a menopausa, a sensibilidade da mamografia aumenta, diminuindo a chance de alarmes falsos.</div>
                             </li>
-                        </ul>
+                            <li class="flex items-start">
+                                 <svg class="h-6 w-6 text-yellow-500 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+                                 <div><strong class="font-semibold text-gray-800">Atenção ao Sobrediagnóstico:</strong> O risco ainda existe e pode ser maior em idades mais avançadas, especialmente após os 70 anos. A conversa sobre os riscos e benefícios continua sendo importante.</div>
+                            </li>
+                         </ul>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Rastreamento Acima dos 50 Anos -->
-        <section id="faixa-50-mais" class="py-16 sm:py-20">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center">
-                    <h2 class="text-3xl font-bold text-gray-900">Rastreamento a Partir dos 50 Anos (até 74)</h2>
-                    <p class="mt-2 text-lg text-gray-600 max-w-3xl mx-auto">Nesta faixa etária, o balanço é mais favorável e o rastreamento bienal é recomendado.</p>
+            <!-- Prevenção Primária -->
+            <section id="prevencao" class="py-16 sm:py-20 bg-teal-50">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center">
+                        <h2 class="text-3xl font-bold text-gray-900">Prevenção Primária: Evitando o Câncer de Mama</h2>
+                        <p class="mt-2 text-lg text-gray-600 max-w-3xl mx-auto">Mamografia detecta, mas não previne. Cerca de <strong class="font-semibold">30% dos casos</strong> podem ser evitados com hábitos saudáveis.</p>
+                    </div>
+                    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="font-semibold text-lg text-teal-700">Pratique Exercícios Físicos</h3>
+                            <p class="text-sm text-gray-600 mt-2">Reduz o risco de câncer e de morte pela doença.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="font-semibold text-lg text-teal-700">Mantenha o Peso Adequado</h3>
+                            <p class="text-sm text-gray-600 mt-2">Evitar sobrepeso e obesidade é um fator protetor.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="font-semibold text-lg text-teal-700">Tenha uma Dieta Saudável</h3>
+                            <p class="text-sm text-gray-600 mt-2">Priorize frutas, verduras e evite ultraprocessados.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="font-semibold text-lg text-teal-700">Evite Bebidas Alcoólicas</h3>
+                            <p class="text-sm text-gray-600 mt-2">O consumo de álcool aumenta o risco de câncer de mama.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="font-semibold text-lg text-teal-700">Não Fume</h3>
+                            <p class="text-sm text-gray-600 mt-2">O tabagismo está associado a um risco modestamente maior.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="font-semibold text-lg text-teal-700">Amamente</h3>
+                            <p class="text-sm text-gray-600 mt-2">O aleitamento materno é considerado um fator de proteção.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="mt-12 max-w-4xl mx-auto bg-white rounded-lg shadow-md p-6 sm:p-8">
-                     <ul class="space-y-4">
-                        <li class="flex items-start">
-                             <svg class="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                             <div><strong class="font-semibold text-gray-800">Benefício Maior:</strong> O risco de câncer de mama aumenta com a idade, e a mamografia é mais eficaz para reduzir a mortalidade nesta faixa, com uma redução de risco de cerca de <strong class="font-semibold">20%</strong>.</div>
-                        </li>
-                        <li class="flex items-start">
-                             <svg class="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                             <div><strong class="font-semibold text-gray-800">Menor Risco de Falso-Positivo:</strong> Com mamas naturalmente menos densas após a menopausa, a sensibilidade da mamografia aumenta, diminuindo a chance de alarmes falsos.</div>
-                        </li>
-                        <li class="flex items-start">
-                             <svg class="h-6 w-6 text-yellow-500 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
-                             <div><strong class="font-semibold text-gray-800">Atenção ao Sobrediagnóstico:</strong> O risco ainda existe e pode ser maior em idades mais avançadas, especialmente após os 70 anos. A conversa sobre os riscos e benefícios continua sendo importante.</div>
-                        </li>
-                     </ul>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Prevenção Primária -->
-        <section id="prevencao" class="py-16 sm:py-20 bg-teal-50">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center">
-                    <h2 class="text-3xl font-bold text-gray-900">Prevenção Primária: Evitando o Câncer de Mama</h2>
-                    <p class="mt-2 text-lg text-gray-600 max-w-3xl mx-auto">Mamografia detecta, mas não previne. Cerca de <strong class="font-semibold">30% dos casos</strong> podem ser evitados com hábitos saudáveis.</p>
-                </div>
-                <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="font-semibold text-lg text-teal-700">Pratique Exercícios Físicos</h3>
-                        <p class="text-sm text-gray-600 mt-2">Reduz o risco de câncer e de morte pela doença.</p>
+            <!-- Sinais de Alerta -->
+            <section id="alerta" class="py-16 sm:py-20">
+                 <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center">
+                        <h2 class="text-3xl font-bold text-gray-900">Atenção aos Sinais e Sintomas de Alerta</h2>
+                        <p class="mt-2 text-lg text-gray-600 max-w-3xl mx-auto">Conhecer o próprio corpo é fundamental. Procure um serviço de saúde <strong class="font-semibold text-red-600">imediatamente</strong> se notar qualquer uma destas alterações.</p>
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="font-semibold text-lg text-teal-700">Mantenha o Peso Adequado</h3>
-                        <p class="text-sm text-gray-600 mt-2">Evitar sobrepeso e obesidade é um fator protetor.</p>
+                    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-red-500">
+                            <p class="font-semibold text-gray-700">Nódulo (caroço) fixo e endurecido</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-red-500">
+                            <p class="font-semibold text-gray-700">Pele da mama avermelhada ou retraída</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-red-500">
+                            <p class="font-semibold text-gray-700">Alterações no mamilo (bico do peito)</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-red-500">
+                            <p class="font-semibold text-gray-700">Saída espontânea de líquido anormal pelos mamilos</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-red-500">
+                            <p class="font-semibold text-gray-700">Pequenos nódulos nas axilas ou no pescoço</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-red-500">
+                            <p class="font-semibold text-gray-700">Pele com aspecto de casca de laranja</p>
+                        </div>
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="font-semibold text-lg text-teal-700">Tenha uma Dieta Saudável</h3>
-                        <p class="text-sm text-gray-600 mt-2">Priorize frutas, verduras e evite ultraprocessados.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="font-semibold text-lg text-teal-700">Evite Bebidas Alcoólicas</h3>
-                        <p class="text-sm text-gray-600 mt-2">O consumo de álcool aumenta o risco de câncer de mama.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="font-semibold text-lg text-teal-700">Não Fume</h3>
-                        <p class="text-sm text-gray-600 mt-2">O tabagismo está associado a um risco modestamente maior.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="font-semibold text-lg text-teal-700">Amamente</h3>
-                        <p class="text-sm text-gray-600 mt-2">O aleitamento materno é considerado um fator de proteção.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                 </div>
+            </section>
 
-        <!-- Sinais de Alerta -->
-        <section id="alerta" class="py-16 sm:py-20">
-             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center">
-                    <h2 class="text-3xl font-bold text-gray-900">Atenção aos Sinais e Sintomas de Alerta</h2>
-                    <p class="mt-2 text-lg text-gray-600 max-w-3xl mx-auto">Conhecer o próprio corpo é fundamental. Procure um serviço de saúde <strong class="font-semibold text-red-600">imediatamente</strong> se notar qualquer uma destas alterações.</p>
-                </div>
-                <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-red-500">
-                        <p class="font-semibold text-gray-700">Nódulo (caroço) fixo e endurecido</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-red-500">
-                        <p class="font-semibold text-gray-700">Pele da mama avermelhada ou retraída</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-red-500">
-                        <p class="font-semibold text-gray-700">Alterações no mamilo (bico do peito)</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-red-500">
-                        <p class="font-semibold text-gray-700">Saída espontânea de líquido anormal pelos mamilos</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-red-500">
-                        <p class="font-semibold text-gray-700">Pequenos nódulos nas axilas ou no pescoço</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-red-500">
-                        <p class="font-semibold text-gray-700">Pele com aspecto de casca de laranja</p>
-                    </div>
-                </div>
-             </div>
-        </section>
-
-        <!-- Full Guideline Document Link Section -->
-        <section class="py-12 bg-gray-100">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h3 class="text-2xl font-bold text-gray-800 mb-4">Quer aprofundar a leitura?</h3>
-                <p class="text-gray-600 mb-6 max-w-2xl mx-auto">Acesse o documento oficial da Secretaria Municipal de Saúde de Florianópolis para consultar todos os detalhes técnicos e as referências completas.</p>
-                <a href="https://drive.google.com/file/d/1u2aNRRhlwQtjmHc9VpMAa6_TfEXauohu/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="inline-block bg-pink-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-pink-700 transition-transform transform hover:scale-105 duration-300 shadow-lg">
-                    Acessar a Diretriz Completa (PDF)
-                </a>
-            </div>
-        </section>
-
-        <!-- Interactive Quiz Section -->
-        <section id="quiz" class="py-16 sm:py-20 bg-pink-50">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-gray-900">Quiz Interativo: Teste seu Conhecimento</h2>
-                    <p class="mt-2 text-lg text-gray-600">Responda às perguntas e veja o quanto você aprendeu sobre as novas diretrizes.</p>
-                </div>
-                <div id="quiz-container" class="max-w-2xl mx-auto bg-white p-6 sm:p-8 rounded-xl shadow-lg">
-                    <div id="question-container" class="mb-6">
-                        <h3 id="question-text" class="text-xl sm:text-2xl font-semibold text-gray-800"></h3>
-                    </div>
-                    <div id="options-container" class="grid grid-cols-1 gap-4">
-                        <!-- Options will be generated here -->
-                    </div>
-                    <div id="feedback-container" class="mt-4 p-4 rounded-md text-sm sm:text-base hidden"></div>
-                    <div id="result-container" class="text-center hidden">
-                        <h3 class="text-2xl font-bold text-gray-800">Seu resultado final:</h3>
-                        <p id="score-text" class="text-3xl font-bold my-4"></p>
-                    </div>
-                    <div class="mt-6 flex justify-end">
-                        <button id="next-btn" class="px-6 py-2 bg-pink-600 text-white font-semibold rounded-lg hover:bg-pink-700 transition duration-200 hidden">Próxima</button>
-                        <button id="restart-btn" class="px-6 py-2 bg-teal-600 text-white font-semibold rounded-lg hover:bg-teal-700 transition duration-200 hidden">Recomeçar</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Curso Livre Section -->
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-             <section id="teste-aproveitamento" class="bg-teal-50 border-t-4 border-teal-500 rounded-xl shadow-lg p-6 md:p-8 my-16 text-center">
-                <h2 class="text-2xl font-bold text-teal-800 mb-4 flex items-center justify-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                    Teste de Aproveitamento
-                </h2>
-                <p class="text-slate-600 mb-8 max-w-2xl mx-auto">Após se inscrever e estudar o material, realize o teste de aproveitamento para obter sua certificação. Lembre-se, a nota de corte é 80%.</p>
-                <div class="flex flex-wrap justify-center gap-6">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeM8C22zSmwiIwU42xPVtzpqrtcg6itb5PQQ8QTBLvAIdrjYg/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 inline-block">
-                        Realizar Teste de Aproveitamento
+            <!-- Full Guideline Document Link Section -->
+            <section class="py-12 bg-gray-100">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Quer aprofundar a leitura?</h3>
+                    <p class="text-gray-600 mb-6 max-w-2xl mx-auto">Acesse o documento oficial da Secretaria Municipal de Saúde de Florianópolis para consultar todos os detalhes técnicos e as referências completas.</p>
+                    <a href="https://drive.google.com/file/d/1u2aNRRhlwQtjmHc9VpMAa6_TfEXauohu/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="inline-block bg-pink-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-pink-700 transition-transform transform hover:scale-105 duration-300 shadow-lg">
+                        Acessar a Diretriz Completa (PDF)
                     </a>
                 </div>
             </section>
-        </div>
 
+            <!-- Interactive Quiz Section -->
+            <section id="quiz" class="py-16 sm:py-20 bg-pink-50">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl font-bold text-gray-900">Quiz Interativo: Teste seu Conhecimento</h2>
+                        <p class="mt-2 text-lg text-gray-600">Responda às perguntas e veja o quanto você aprendeu sobre as novas diretrizes.</p>
+                    </div>
+                    <div id="quiz-container" class="max-w-2xl mx-auto bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                        <div id="question-container" class="mb-6">
+                            <h3 id="question-text" class="text-xl sm:text-2xl font-semibold text-gray-800"></h3>
+                        </div>
+                        <div id="options-container" class="grid grid-cols-1 gap-4">
+                            <!-- Options will be generated here -->
+                        </div>
+                        <div id="feedback-container" class="mt-4 p-4 rounded-md text-sm sm:text-base hidden"></div>
+                        <div id="result-container" class="text-center hidden">
+                            <h3 class="text-2xl font-bold text-gray-800">Seu resultado final:</h3>
+                            <p id="score-text" class="text-3xl font-bold my-4"></p>
+                        </div>
+                        <div class="mt-6 flex justify-end">
+                            <button id="next-btn" class="px-6 py-2 bg-pink-600 text-white font-semibold rounded-lg hover:bg-pink-700 transition duration-200 hidden">Próxima</button>
+                            <button id="restart-btn" class="px-6 py-2 bg-teal-600 text-white font-semibold rounded-lg hover:bg-teal-700 transition duration-200 hidden">Recomeçar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Curso Livre Section -->
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                 <section id="teste-aproveitamento" class="bg-teal-50 border-t-4 border-teal-500 rounded-xl shadow-lg p-6 md:p-8 my-16 text-center">
+                    <h2 class="text-2xl font-bold text-teal-800 mb-4 flex items-center justify-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                        Teste de Aproveitamento
+                    </h2>
+                    <p class="text-slate-600 mb-8 max-w-2xl mx-auto">Após se inscrever e estudar o material, realize o teste de aproveitamento para obter sua certificação. Lembre-se, a nota de corte é 80%.</p>
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeM8C22zSmwiIwU42xPVtzpqrtcg6itb5PQQ8QTBLvAIdrjYg/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 inline-block">
+                            Realizar Teste de Aproveitamento
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div> <!-- End of main-content -->
     </main>
     
     <!-- Course Modal -->
@@ -395,9 +407,12 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                const targetElement = document.querySelector(this.getAttribute('href'));
+                if(targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
 
@@ -418,6 +433,24 @@
         courseModal.addEventListener('click', (e) => {
             if (e.target === courseModal) {
                 courseModal.classList.add('hidden');
+            }
+        });
+
+        // Start Course Logic
+        const startBtn = document.getElementById('start-course-btn');
+        const startSection = document.getElementById('start-section');
+        const mainContent = document.getElementById('main-content');
+        const firstContentSection = document.getElementById('videos'); 
+
+        startBtn.addEventListener('click', () => {
+            mainContent.classList.remove('hidden');
+            startSection.classList.add('hidden');
+            
+            // Scroll to the beginning of the content
+            if(firstContentSection){
+                firstContentSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
             }
         });
 
