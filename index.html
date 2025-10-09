@@ -17,6 +17,20 @@
         section {
             scroll-margin-top: 80px;
         }
+        /* Custom animation for modal */
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fade-in-up 0.3s ease-out forwards;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -28,14 +42,15 @@
                 <div class="flex-shrink-0">
                     <h1 class="text-xl sm:text-2xl font-bold text-pink-600">Diretrizes do Câncer de Mama</h1>
                 </div>
-                <nav class="hidden md:flex space-x-6">
-                    <a href="#mudancas" class="text-gray-600 hover:text-pink-600 font-medium transition duration-150 ease-in-out">O Que Mudou</a>
-                    <a href="#faixa-40-49" class="text-gray-600 hover:text-pink-600 font-medium transition duration-150 ease-in-out">40-49 Anos</a>
-                    <a href="#faixa-50-mais" class="text-gray-600 hover:text-pink-600 font-medium transition duration-150 ease-in-out">50+ Anos</a>
-                    <a href="#prevencao" class="text-gray-600 hover:text-pink-600 font-medium transition duration-150 ease-in-out">Prevenção</a>
-                    <a href="#alerta" class="text-gray-600 hover:text-pink-600 font-medium transition duration-150 ease-in-out">Sinais de Alerta</a>
-                    <a href="#videos" class="text-gray-600 hover:text-pink-600 font-medium transition duration-150 ease-in-out">Vídeos</a>
-                    <a href="#quiz" class="text-gray-600 hover:text-pink-600 font-medium transition duration-150 ease-in-out">Quiz</a>
+                <nav class="hidden md:flex items-center space-x-4">
+                    <a href="#videos" class="text-sm text-gray-600 hover:text-pink-600 font-medium transition duration-150 ease-in-out">Vídeos</a>
+                    <a href="#mudancas" class="text-sm text-gray-600 hover:text-pink-600 font-medium transition duration-150 ease-in-out">O Que Mudou</a>
+                    <a href="#faixa-40-49" class="text-sm text-gray-600 hover:text-pink-600 font-medium transition duration-150 ease-in-out">40-49 Anos</a>
+                    <a href="#faixa-50-mais" class="text-sm text-gray-600 hover:text-pink-600 font-medium transition duration-150 ease-in-out">50+ Anos</a>
+                    <a href="#prevencao" class="text-sm text-gray-600 hover:text-pink-600 font-medium transition duration-150 ease-in-out">Prevenção</a>
+                    <a href="#alerta" class="text-sm text-gray-600 hover:text-pink-600 font-medium transition duration-150 ease-in-out">Sinais de Alerta</a>
+                    <a href="#quiz" class="text-sm text-gray-600 hover:text-pink-600 font-medium transition duration-150 ease-in-out">Quiz</a>
+                    <a href="#teste-aproveitamento" class="text-sm text-gray-600 hover:text-pink-600 font-medium transition duration-150 ease-in-out">Teste de Aproveitamento</a>
                 </nav>
             </div>
         </div>
@@ -48,9 +63,14 @@
                 <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Novas Diretrizes para o Rastreamento do Câncer de Mama no Brasil</h2>
                 <p class="mt-4 max-w-3xl mx-auto text-lg sm:text-xl text-pink-100" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Entenda as atualizações do Ministério da Saúde (Setembro de 2025) e a importância da decisão compartilhada.</p>
                 
-                <button id="openModalBtn" class="mt-4 flex items-center justify-center text-lg text-white bg-white/20 backdrop-blur-sm py-2 px-4 rounded-full max-w-xs mx-auto hover:bg-white/30 transition-colors">
-                    <i class="fas fa-graduation-cap mr-2"></i>Curso Livre
-                </button>
+                <div class="mt-8 flex flex-wrap justify-center items-center gap-4">
+                    <button id="openModalBtn" class="flex items-center justify-center text-lg text-white bg-white/20 backdrop-blur-sm py-3 px-6 rounded-full hover:bg-white/30 transition-colors">
+                        <i class="fas fa-graduation-cap mr-2"></i>Curso Livre - Instruções
+                    </button>
+                    <a href="https://espfloripa.github.io/cursoslivres/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center text-lg text-white bg-indigo-600/50 backdrop-blur-sm py-3 px-6 rounded-full hover:bg-indigo-600/80 transition-colors">
+                        <i class="fas fa-file-signature mr-2"></i>Curso Livre - Inscrição
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -58,7 +78,7 @@
         <section class="bg-pink-50 py-16 sm:py-20">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <!-- Videos moved here -->
-                <div id="videos">
+                <div id="videos" style="scroll-margin-top: 80px;">
                     <h3 class="text-2xl font-bold text-gray-900 mb-8">Vídeos Informativos</h3>
                     <div class="grid gap-8 grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto">
                         <!-- Video 1 -->
@@ -322,18 +342,15 @@
 
         <!-- Curso Livre Section -->
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-             <section id="curso-livre" class="bg-teal-50 border-t-4 border-teal-500 rounded-xl shadow-lg p-6 md:p-8 my-16 text-center">
+             <section id="teste-aproveitamento" class="bg-teal-50 border-t-4 border-teal-500 rounded-xl shadow-lg p-6 md:p-8 my-16 text-center">
                 <h2 class="text-2xl font-bold text-teal-800 mb-4 flex items-center justify-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
-                    Participe do Curso Livre
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                    Teste de Aproveitamento
                 </h2>
-                <p class="text-slate-600 mb-8 max-w-2xl mx-auto">Aprofunde seu conhecimento e obtenha a certificação. Siga os passos abaixo para se inscrever e realizar o teste de aproveitamento.</p>
+                <p class="text-slate-600 mb-8 max-w-2xl mx-auto">Após se inscrever e estudar o material, realize o teste de aproveitamento para obter sua certificação. Lembre-se, a nota de corte é 80%.</p>
                 <div class="flex flex-wrap justify-center gap-6">
-                    <a href="https://espfloripa.github.io/cursoslivres/" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 inline-block">
-                        Inscrição para o curso livre
-                    </a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSeM8C22zSmwiIwU42xPVtzpqrtcg6itb5PQQ8QTBLvAIdrjYg/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 inline-block">
-                        Teste de aproveitamento
+                        Realizar Teste de Aproveitamento
                     </a>
                 </div>
             </section>
@@ -353,8 +370,8 @@
             <div class="text-slate-700">
                 <ol class="list-decimal list-inside space-y-3 text-base">
                     <li>Este Curso Livre é voltado para profissionais de saúde de nível superior e será certificado com a carga horária de 2 horas/aula.</li>
-                    <li>Você deve clicar no botão disponível no fim desta página (ou <a href="https://espfloripa.github.io/cursoslivres/" target="_blank" rel="noopener noreferrer" class="text-teal-600 hover:underline font-semibold">aqui</a>) e preencher todos os campos para se inscrever no curso no mês corrente.</li>
-                    <li>Após a inscrição realizada, você tem até o último dia do mês para responder o teste de aproveitamento disponibilizado no botão no fim da página (não confundir com o Quiz!).</li>
+                    <li>Você deve clicar no botão ao lado (ou <a href="https://espfloripa.github.io/cursoslivres/" target="_blank" rel="noopener noreferrer" class="text-teal-600 hover:underline font-semibold">aqui</a>) e preencher todos os campos para se inscrever no curso no mês corrente.</li>
+                    <li>Após a inscrição realizada, você deve explorar o material e tem até o último dia do mês para responder o teste de aproveitamento disponibilizado no botão no fim da página (não confundir com o Quiz!).</li>
                     <li>Para responder o teste de aproveitamento você deve estar logado em uma conta Google, coloque o nome completo, CPF e e-mail conforme você colocou no link de inscrição.</li>
                     <li>A nota de corte para aprovação é de 80%.</li>
                     <li>O teste de aproveitamento só permite uma resposta por participante, caso você não seja aprovado poderá repetir o curso no mês seguinte.</li>
@@ -623,7 +640,4 @@
     </script>
 </body>
 </html>
-
-
-
 
